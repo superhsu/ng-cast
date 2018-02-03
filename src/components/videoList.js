@@ -11,8 +11,5 @@ angular.module('video-player')
     // }
     bindings: {
       videos: '<'
-    },
-    controller: () => {
-      console.log(this.videos);
     }
   });

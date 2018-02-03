@@ -6,6 +6,5 @@ angular.module('video-player')
       video: '<'
     },
     controller: function() {
-      console.log('hi');
     }
   });
