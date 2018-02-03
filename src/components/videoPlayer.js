@@ -4,7 +4,7 @@ angular.module('video-player')
   // TODO
     templateUrl: "src/templates/videoPlayer.html",
     bindings: {
-      videos: '<'
+      video: '<'
     },
     // controller: function() {
     //   console.log($ctrl.videos);

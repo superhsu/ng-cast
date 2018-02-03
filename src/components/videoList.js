@@ -4,12 +4,17 @@ angular.module('video-player')
   // bindings: {
   //   videos: '<' 
   // },
+    controller: function () {
+      console.log(this);
+    },
     templateUrl: 'src/templates/videoList.html',
     // bindings: {
     //   videoData: <
       
     // }
     bindings: {
-      videos: '<'
+      videos: '<',
+      selectVideo: '<'
     }
+    
   });
