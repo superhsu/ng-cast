@@ -1,6 +1,6 @@
 angular.module('video-player')
   .service('youTube', function($http) {
-    this.searchService = function (query) {
+    this.searchService = (query, callback) => {
       $http({
         method: 'GET',
         url: 'https://www.googleapis.com/youtube/v3/search',
@@ -14,6 +14,9 @@ angular.module('video-player')
         }
       }).then(function successCallback(data) {
         console.log('searched!');
+        data = data.data.items; 
+        console.log(callback);
+        callback(data);
         // this callback will be called asynchronously
         // when the response is available
       }, function errorCallback(data) {
