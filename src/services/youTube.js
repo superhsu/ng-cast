@@ -5,7 +5,7 @@ angular.module('video-player')
         method: 'GET',
         url: 'https://www.googleapis.com/youtube/v3/search',
         params: {
-          q: 'cats',
+          q: query,
           max: 5,
           type: 'video',
           videoEmbeddable: 'true',
@@ -20,6 +20,7 @@ angular.module('video-player')
         // this callback will be called asynchronously
         // when the response is available
       }, function errorCallback(data) {
+        console.log(data);
         console.log('err');
         // called asynchronously if an error occurs
         // or server returns response with an error status.

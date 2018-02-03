@@ -11,10 +11,10 @@ angular.module('video-player')
         this.currentVideo = this.videos[index];
       };
       var that = this; 
-      this.searchYoutube = () => {
+      this.searchYoutube = (query) => {
         //call our service 
         console.log(this, 'outside service');
-        youtube.searchService('cats', (data) => {
+        youtube.searchService(query, (data) => {
           console.log(this, 'inside service');
           this.videos = data;
           this.currentVideo = data[0];
