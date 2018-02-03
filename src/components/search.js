@@ -1,5 +1,12 @@
 angular.module('video-player')
 
-.component('search', {
+  .component('search', {
   // TODO
-});
+    templateUrl: 'src/templates/search.html',
+    controller: ['youTube', function (youtube) {
+      this.searchYoutube = () => {
+        //call our service 
+        youtube.searchService();
+      };   
+    }]
+  });
