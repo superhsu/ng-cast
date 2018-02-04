@@ -7,10 +7,3 @@ angular.module('video-player')
       searchYoutube: '<'
     }
   });
-
-
-// controller: ['youTube', function (youtube) {
-//       this.searchYoutube = () => {
-//         //call our service 
-//         youtube.searchService();
-//       };   

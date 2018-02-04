@@ -6,7 +6,5 @@ angular.module('video-player')
     bindings: {
       video: '<'
     },
-    // controller: function() {
-    //   console.log($ctrl.videos);
-    // }
+
   });
